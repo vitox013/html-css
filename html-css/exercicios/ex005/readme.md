@@ -1,0 +1,1 @@
+O exercicio 005 foi feito junto com o ex004, por isso aqui está vazio.
