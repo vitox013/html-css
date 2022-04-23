@@ -7,28 +7,51 @@
     <title>Mudando o tamanho da imagem de fundo</title>
     <style>
         body{
+            /*
             height: 100vh;
-            background-image: url(imagens/wallpaper002.jpg);
             background-color: black;
-            background-repeat: no-repeat;
+            background-image: url(imagens/wallpaper002.jpg);
             background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            o cover não funciona no short-hand
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
+            position: absolute;
             background-color: white;
             width: 400px;
             border: 1px solid black;
             border-radius: 10px;
-            padding: 10px;
-            margin: auto;
+            padding: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+
+        main > h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        main > p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.3em;
+        }
+
     </style>
 </head>
 <body>
     <main>
         <h1>Teste imagem</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat maiores nulla ipsa culpa corrupti. Quis eveniet, ex corporis, beatae delectus nemo possimus omnis dolor consequatur accusamus, quos excepturi aperiam ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, modi hic quibusdam nulla natus officiis esse. Odio facere iure ducimus aliquam incidunt. Atque similique est qui, reprehenderit asperiores reiciendis esse.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat maiores nulla ipsa culpa corrupti. Quis eveniet, ex corporis, beatae delectus nemo possimus omnis dolor consequatur accusamus, quos excepturi aperiam ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, modi hic quibusdam nulla natus ofo nisi nam pariatur. Lorem ipsum dolor sit amet, consectetu est soluta voluptatem distinctio magni quasi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat maiores nulla ipsa culpa corrupti. Quis eveniet, ex corporis, beatae </p>
     </main>
 </body>
 </html>
